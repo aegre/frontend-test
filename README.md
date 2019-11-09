@@ -31,3 +31,7 @@ Como tal estos no son necesarios, pero si tienes tiempo creo que podrían ser un
 
 - Al cliente le gustaría que cada elemento de la lista parezca un card.
 
+
+## Instrucciones
+
+Haz fork de este repo y ház la solución desde ese fork. Una vez que estés listo manda un PR a este repo con la solución a la que llegaste.

@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
 import TodoList from './components/TodoList';
 import TodoListForm from './components/TodoListForm';
 import TodoFilter from './components/TodoFilter';
 
-function App() {
+import './App.scss';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App--header">
         Just another todo list
       </header>
       <TodoListForm/>
