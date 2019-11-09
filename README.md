@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Frontend test
 
-## Available Scripts
+Este test está pensado para ver tus habilidades en react, redux, sass y javascript. No te estreses, no es necesario cubrir todos los puntos, solo cubre aquellos que creas necesarios y/o los que puedes hacer más rápido. 
 
-In the project directory, you can run:
+## Descripción del problema
 
-### `npm start`
+Se tiene una aplicación web que es una lista de tareas, sin embargo el cliente ha detectado algunos problemas que requieren nuestra atención. Está en ti priorizarlos he ir solucionándolos poco a poco.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ ] Requiere que el formulario para agregar formulario se vea vertical, es decir primero el label de tarea, abajo el input para meter el texto y abajo el botón. Actualmente se ven de forma horizontal.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [ ] Requiere que al filtro seleccionado se muestre subrayado en lugar, de color azul, buscando que sea más fácil de ver.
 
-### `npm test`
+- [ ] Los filtros parecen no estar funcionando.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ] El botón de eliminar no es estético, quisiera que tuviera un color rojo, además parece que no funciona.
 
-### `npm run build`
+- [ ] Requiere que las tareas completadas se muestran en un color más tenue que las no completadas y tachadas.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ ] Tenemos un bug en donde si agregas elementos desde el formulario, solo se puede marcar o desmarcar el primer elemento agregado. Parece que estamos generando elementos sin ids.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [ ] Tenemos que hacer más evidente que en la lista al hacer click sobre el elemento se va a marca como completada o incompleta.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] Tenemos una viñeta al principio de cada elemento de la lista, lo cual luce raro.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Extras
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Como tal estos no son necesarios, pero si tienes tiempo creo que podrían ser una buena adición.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- El cliente quiere ver la posibilidad de eliminar elementos de la lista.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Al cliente le gustaría que cada elemento de la lista parezca un card.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
