@@ -4,8 +4,7 @@ import './index.scss'
 
 class TodoListForm extends Component {
   state = {
-    name: '',
-    description: ''
+    name: ''
   }
 
   handleInputChange = (event) => {
@@ -19,7 +18,7 @@ class TodoListForm extends Component {
   }
 
   render () {
-    const { name, description } = this.state
+    const { name } = this.state
 
     return (
       <form className='todo_form--container' onSubmit={this.handleSubmit}>
@@ -27,7 +26,6 @@ class TodoListForm extends Component {
         <label>Tarea: </label>
         <input name='name' onChange={this.handleInputChange} value={name}/>
         <label>Descripción: </label>
-        <input name='description' onChange={this.handleInputChange} value={description}/>
         <button className='todo_form--button' type='submit'>
           Agregar
         </button>

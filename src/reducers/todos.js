@@ -15,8 +15,12 @@ const todoReducer = (state = initialState, action) => {
       }
     }
     case TOGGLE_ITEM_STATUS_ACTION: {
+      const indexToToggle = state.todoList.findIndex(item => item.id === action.payload)
+      const newTodoList = [...state.todoList]
+      newTodoList[indexToToggle].completed = !newTodoList[indexToToggle].completed
       return { 
-        ...state
+        ...state,
+        todoList: newTodoList
       }
     }
     case SET_FILTER_ACTION: {
