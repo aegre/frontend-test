@@ -11,7 +11,8 @@ const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO_ACTION: {
       return {
-        ...state
+        ...state,
+        todoList: [...state.todoList, action.payload]
       }
     }
     case TOGGLE_ITEM_STATUS_ACTION: {

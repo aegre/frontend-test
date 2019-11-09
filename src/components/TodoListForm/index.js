@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 
+import { addTodo } from '../../actions';
 import './index.scss'
 
 class TodoListForm extends Component {
@@ -14,7 +16,13 @@ class TodoListForm extends Component {
   }
 
   handleSubmit = (event) => {
+    const { addTodo: addTodoAction } = this.props
+    const { name } = this.state
     event.preventDefault()
+
+    addTodoAction({
+      name
+    })
   }
 
   render () {
@@ -25,7 +33,6 @@ class TodoListForm extends Component {
         <h2>Agregar tarea</h2>
         <label>Tarea: </label>
         <input name='name' onChange={this.handleInputChange} value={name}/>
-        <label>Descripción: </label>
         <button className='todo_form--button' type='submit'>
           Agregar
         </button>
@@ -35,4 +42,4 @@ class TodoListForm extends Component {
 
 };
 
-export default TodoListForm;
+export default connect(undefined, { addTodo })(TodoListForm);
