@@ -1,0 +1,18 @@
+.todo_filter {
+  &--container {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  &--item {
+    font-size: .75ren;
+    cursor: pointer;
+    font-weight: bold;
+    &-selected {
+      color: blue;
+    }
+  }
+}
